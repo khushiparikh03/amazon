@@ -1,9 +1,13 @@
 // Sample data for products
 const products = [
-    { name: "iphone 15", image: "iphone.JPG", price: "$800" , btn: "Add to cart"},
-    { name: "Oppo Reno10", image: "oppo1.JPG", price: "$580" , btn: "Add to cart"},
-    { name: "vivo s9", image: "vivo2.JPG", price: "$500" , btn: "Add to cart"},
-    { name: "vivo v12", image: "vivo1.JPG", price: "$620" , btn: "Add to cart"},
+    { name: "iphone 15", image: "iphone.JPG", price: "$800"},
+    { name: "Oppo Reno10", image: "oppo1.JPG", price: "$580"},
+    { name: "vivo s9", image: "vivo2.JPG", price: "$500"},
+    { name: "vivo v12", image: "vivo1.JPG", price: "$620"},
+    { name: "samsung1", image: "samsung1.JPG", price: "$500"},
+    { name: "redmi1", image: "redmi1.JPG", price: "$620"},
+    { name: "redmi 13", image: "redmi2.JPG", price: "$500"},
+    { name: "galaxy s23", image: "samsung2.JPG", price: "$620"},
     // Add more products as needed
 ];
 
@@ -25,17 +29,12 @@ function displayProducts() {
         const price = document.createElement('p');
         price.textContent = product.price;
 
-        const btn = document.createElement('btn');
-        btn.textContent = product.btn;
-
         productCard.appendChild(image);
         productCard.appendChild(name);
         productCard.appendChild(price);
-        productCard.appendChild(btn);
 
         productsSection.appendChild(productCard);
     });
 }
-
 // Display products on page load
 window.addEventListener('DOMContentLoaded', displayProducts);
