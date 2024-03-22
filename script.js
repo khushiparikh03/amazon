@@ -1,9 +1,9 @@
 // Sample data for products
 const products = [
-    { name: "iphone 15", image: "iphone.jpg", price: "$800" , btn: "Add to cart"},
-    { name: "Oppo Reno10", image: "oppo1.jpg", price: "$580" , btn: "Add to cart"},
-    { name: "vivo s9", image: "vivo2.jpg", price: "$500" , btn: "Add to cart"},
-    { name: "vivo v12", image: "vivo1.jpg", price: "$620" , btn: "Add to cart"},
+    { name: "iphone 15", image: "iphone.JPG", price: "$800" , btn: "Add to cart"},
+    { name: "Oppo Reno10", image: "oppo1.JPG", price: "$580" , btn: "Add to cart"},
+    { name: "vivo s9", image: "vivo2.JPG", price: "$500" , btn: "Add to cart"},
+    { name: "vivo v12", image: "vivo1.JPG", price: "$620" , btn: "Add to cart"},
     // Add more products as needed
 ];
 
