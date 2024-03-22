@@ -1,0 +1,206 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    height: 120px;
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 190px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: auto;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    margin-right: auto; /* Pushes the search bar to the left */
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 200px; /* Adjust width as needed */
+}
+
+.search-form button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product img {
+    width: 100%;
+    max-height: 400px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    height: 300px; /* Adjust the height as needed */
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    height: 530px; /* Increased height */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 80%;
+    height: 400px;
+    object-fit: fill;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact {
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.contact h2 {
+    margin-top: 0;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form input[type="tel"],
+.contact form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Optional: Add some color to alternate product cards */
+.products .product:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product {
+    /* Previous styles */
+    position: relative; /* Ensure relative positioning for absolute positioning */
+}
+
+.buy-now-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #0056b3;
+}
